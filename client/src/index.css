@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define Geizer to use Bebas Neue */
+.geizer-font, [style*="font-family: 'Geizer'"], [style*='font-family: Geizer'] {
+  font-family: 'Bebas Neue', sans-serif !important;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-black text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 100%;
+    
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
+    
+    /* Gold accent color #D5A964 */
+    --primary: 38 53% 61%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+    
+    --accent: 38 53% 61%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 38 53% 61%;
+    
+    --radius: 0.4rem;
+  }
+}
+
+.geizer-font {
+  font-family: 'Geizer', 'Bebas Neue', sans-serif;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  letter-spacing: 0.01em;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+/* Add higher quality styling for carousel elements */
+.carousel-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+}
+
+.carousel-spice-text {
+  color: #D5A964;
+}
+
+.carousel-order-button {
+  background-color: #D5A964;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-order-button:hover {
+  background-color: #c99c58;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Who Are We section styling */
+.who-are-we-text p:first-of-type {
+  position: relative;
+  max-width: 1220px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 200%;
+  color: #474747;
+}
+
+.who-are-we-text p:last-of-type {
+  position: relative;
+  max-width: 1220px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 200%;
+  color: #474747;
+}
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(135deg, rgba(30,30,30,0.8) 0%, rgba(20,20,20,0.9) 100%);
+  border: 1px solid rgba(213, 169, 100, 0.1);
+}
+
+/* Custom shadows for material icons */
+.material-icon-shadow-1 {
+  box-shadow: -1px 4px 4px 0px rgba(0, 0, 0, 0.85);
+}
+
+.material-icon-shadow-2 {
+  box-shadow: -3px 4px 4px 0px rgba(0, 0, 0, 1);
+}
+
+.material-icon-shadow-3 {
+  box-shadow: -4px 5px 4px 0px rgba(0, 0, 0, 1);
+}
+
+/* Text colors */
+.text-gold {
+  color: #D5A964;
+}
+
+.text-light-gray {
+  color: #E2E2E2;
+}
+
+/* Featured product tabs */
+.category-tab-active {
+  background-color: #D5A964;
+  color: white;
+}
+
+.category-tab-inactive {
+  border: 1px solid rgba(213, 169, 100, 0.3);
+  color: white;
+}
+
+.category-tab-inactive:hover {
+  border-color: rgba(213, 169, 100, 0.5);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.1);
+}
+
+.custom-shadow {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Gold accent elements */
+.gold-accent {
+  color: #D4AF37;
+}
+
+.gold-bg {
+  background-color: #D4AF37;
+}
+
+.gold-border {
+  border-color: #D4AF37;
+}
+
+/* Custom button styles */
+.btn-gold {
+  background-color: #D4AF37;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+  background-color: #C8A42F;
+}
+
+/* Custom text styles */
+.fancy-title {
+  font-family: 'Geizer', 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
